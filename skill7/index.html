@@ -8,6 +8,19 @@
         
     </head>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        .row{
+            display:flex;
+        }
+        
+        .column{
+            flex:33.33%;
+            padding: 5px;
+        }
+        
         @font-face {
             font-family:Ultra-regular;
             src:url(../fonts/serif/ultra-regular.ttf) format('truetype');
@@ -219,27 +232,28 @@
                         
                         <subsection>
                     
-                        <figure-1>
+                        <div class="row">
+                            <div class="column">
                             <img src="images/eren-30s.jpg" alt="Eren">
                         <figcaption>
                             <p> </p>
                             </figcaption>
-                        </figure-1>
+                        </div>
                      
-                        <figure-1>
+                        <div class="column">
                             <img src="images/industrial-city-2.jpg" alt="industrial">
                         <figcaption>
                             <p> </p>
                             </figcaption>
-                        </figure-1>
+                        </div>
                             
-                        <figure-1>
+                        <div class="column">
                             <img src="images/in-nomino.jpg" alt="in-nomino">
                         <figcaption>
                             <p> </p>
                             </figcaption>
-                        </figure-1>
-                            
+                        </div>
+                            </div>   
                         </subsection>  
                         
                     </section>
