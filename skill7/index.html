@@ -55,41 +55,29 @@ header, footer {
             }
 
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-/* Navigation Menu */
-            nav {
-                margin-top: .25rem;
-            
-            }
-            
-            nav a:link {
-                text-decoration:none;
-                display: inline;
-                width: 100%;
-                line-height: 3;
-                text-align: center;
-                font-size: 1.125rem;
-                margin-bottom: 1.5rem;
-                border: solid;
-                border-width: .0625rem;
-                border-color: #33658A;
-            }
-            
-            nav a:focus {
-                color:#FFF;
-                background-color: #33658A;
-            }
-            nav a:hover {
-                color:#FFF;
-                background-color: #33658A;
-            }
-            nav a:active {
-                color:#FFF;
-                background-color: #000;
-            }
-            
+li {
+  float: left;
+}
 
-/* Footer Styles */
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
 
             footer {
                 text-align: right;
@@ -114,11 +102,11 @@ header, footer {
         <!-- Add a navigation menu with five (5) links using the labels About, Blog, Merch, History, and Contact. Use the "#" symbol for your href values. -->
         <ul>
         <nav> 
-            <a href="#">About </a>
-            <a href="#">Blog</a>
-            <a href="#">Merch</a>
-            <a href="#">History</a>
-            <a href="#">Contact</a>
+            <li><a href="#">About </a></li>
+           <li> <a href="#">Blog</a></li>
+           <li> <a href="#">Merch</a></li>
+          <li>  <a href="#">History</a></li>
+           <li> <a href="#">Contact</a></li>
         </nav>
         </ul>
         <main>
