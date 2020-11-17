@@ -4,323 +4,398 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Aaron Davidson">
-        <title>Franzen Irony University</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Bacon Party Unicorns</title>
         
-        <!-- Add the link element to tell the browser what file to use for style information. -->
-        <style>/* General setup */
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
 
-* {
-    box-sizing: border-box;
-}
+        @font-face {
+            font-family:Ultra-regular;
+            src:url(C:/Users/Sandarrows/Documents/GitHub/sandarrow.github.io/skill7/fonts/serif/ultra-regular.ttf) format('truetype'); 
+            font-weight:normal;
+            font-style:normal;
+        }
+        @font-face{
+            font-family:josefinslab;
+            src:url(C:/Users/Sandarrows/Documents/GitHub/sandarrow.github.io/skill7/fonts/serif/josefinslab-regular.ttf) format('truetype');
+            font-weight:normal;
+            font-style:normal;
+        }
 
-html {
-    font-size:16px;
-}
+        html{
+            font-family: josefinslab, Arial, serif;
+            font-size: 16pt;
+        }
+        nav {
+            float: top;  
+        }
+        
+        mark{
+            background-color:darkred;
+            color:bisque;          
+        }   
 
-body {
-    margin: 1.5rem auto;
-    width:90%;
-    min-width:56.25rem;
-}
+        header{
+            font-family: Ultra-regular, Arial, serif;
+            font-size: 75px;
+            margin: 1.125rem;
+            transform: skewY(170deg);
+            text-align: center;
+            text-shadow: 2px 2px black;
+            
+        }
 
-/* Layout */
+        h2 {
+            text-align: left;
+            float:top;
+            padding-left: 40px;
+            
+        }
+            
+        h3{
+            text-decoration: none;
+            text-align:left;
+            font-family: Ultra-regular, Arial, serif;
+            font-size: 20pt;
+            
+        }
 
-main {
-    overflow:auto;
-    min-width:45rem;
+        a:link {
+            color:black;
+        }
+            
+        a:visited {
+            color:darkblue;
+        }
+            
+        a:focus {
+            text-decoration:none;
+        }
+            
+        a:hover {
+            text-decoration:none;
+        }
+        
+
+        
+        ul {
+            position:relative;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:white;
+            border-top: .125rem solid #33658A;
+            border-bottom: .125rem solid #33658A;
+            font-size: 20px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 28px 32px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        
+        nav a:focus {
+            color:#FFF;
+            background-color: #33658A;
+        }
+        
+        nav a:hover {
+            color:#FFF;
+            background-color: #33658A;
+        }
+        
+        nav a:active {
+            color:#FFF;
+            background-color: #000;
+        }
+ 
+        footer {
+            text-align: right;
+            color: gray;
+            padding-top: 10px;
+        }
+
+        .columnbot{
+            display:flex;
+        }
+                 
+        .columnside{
+            
+            flex-wrap:wrap;            
+            max-height: 100%;
+            max-width: 100%;
+            padding: 10%;
+        }
+        
+        main-section1{
+            display:flex;
+            flex-wrap: wrap;
+            float:left;                
+            text-align: left;
+            margin-right: auto;
+        }
+        
+        main-section2{
+            display:flex;
+            flex-wrap: wrap;
+            float:right;                
+            text-align: left;
+            
+        }
+        
+        ps{
+            text-align: left;
+            font-size: 16pt;
+            text-decoration: none;
+            font-family: josefinslab, Arial, serif;                      
+            
+        }
     
+      .flexContainer {
+           display: inline-flex;
+           flex-wrap: wrap;
+           font-size: 12pt;
+           text-align: left;
+      }
+
+.flexLeft{
+ position:absolute; 
+ 
+  flex: 50%;
+  margin-right:30%;
+    margin-left:10%;
+    font-family: josefinslab, Arial, serif;
+    font-size: 20pt;
 }
 
-section {
-    float: left;
-    min-width: 22.5rem;
-    width:50%;
+.flexRight {
+  position: static;
+  
+  flex: 25%;
+  border-left: 5px solid black;          
+    margin-left: 75%;
+    display:grid;
+    flex-wrap: wrap;
+    float:right;       
+    text-align: left; 
+    max-width: 2560px;
+    padding-left: 2%;
 }
-
-figure {
-    width:60%;
-    margin:0 10% 0 0;
-    float:left;
+        
+@media (max-width: screen.width()) {
+  .flexRight, .flexLeft {
+    flex: 100%;
+  }
 }
-
-figure img {
-    width:100%;
-    max-width:25rem;
-}
-
-figcaption {
-    margin:.375rem 0;
-}
-
-.long-list {
-    margin-top:0;
-}
-
-nav {
-    float: left;
-    width:11.25rem;
-}
-
-footer {
-    clear: both;
-    margin-top:1.5rem;
-}
-
-section, aside, nav, footer {
-  padding: .5rem;
-}
-
-/* header and footer */
-
-header, footer {
-  border-top: .125rem solid #33658A;
-  border-bottom: .125rem solid #33658A;
-}
-
-/* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
-
-/* NO changes should be made to any of the code above. */
-
-/* NOTE: While you will be using some of the same CSS properties, the VALUES 
-   may need to be different in order to style the page correctly. */
-
-
-
-/* Imported Typfaces */
-
-            @font-face {
-                font-family:Monsterrat;
-                src:url(../fonts/Monsterrat-regular.ttf) format('truetype');
-                font-weight:normal;
-                font-style:normal;
-            }
-            @font-face{
-                font-family:Josefinslab;
-                src:url(../fonts/Josefinslab-regular.ttf) format('truetype');
-                font-weight:normal;
-                font-style:normal;
-            }
-
-
-
-
-/* Typography Styles */
-
-            html {
-                font-family:Monsterrat, Arial, sans-serif;
-                font-weight:normal;
-                font-style:normal;
-            }
+        subsection{
+            z-index: 4;
+            position:fixed;
+            height: auto;
+            width: auto;
+            background-color: navy;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            color:lawngreen; 
+            font-size: 30pt;
+            text-align: center;
+            vertical-align:middle;
+                 
+        }
+       
+        hr {
             
-            h1 {
-                font-family: Josefinslab, Arial, sans-serif;
-                font-size: 3.75rem;
-                margin: 1.125rem;
-                text-align: center;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            h2 + p {
-                font-size: .75rem;
-                letter-spacing: .03125rem;
-                word-spacing: .125rem;
-            }
-            
-            p {
-                font-size: .75rem;
-                letter-spacing:.03125rem;
-                word-spacing: .125rem;
-                text-indent: .75rem;
-                
-            }
-            
-            li {
-                font-size: .75rem;
-                letter-spacing:.03125rem;
-                word-spacing: .125rem;
-                
-            }
-            
-            figcaption {
-                font-size: .75rem;
-                margin-bottom: 2rem;
-            }
-
-
-
-
-/* Link Styling */
-            
-            
-            
-            a:link {
-                color:#33658A;
-            }
-            
-            a:visited {
-                color:#33658A;
-            }
-            
-            a:focus {
-                text-decoration:none;
-            }
-            
-            a:hover {
-                text-decoration:none;
-            }
-
-
-
-
-
-/* List Styling */
-            ul {
-                margin-bottom: 1rem;
-                margin-top: 1rem.;
-                margin-left: 0rem;
-                margin-right: 0rem;
-                list-style: square;
-            }
-            
-            ol {
-                margin-bottom: 1rem;
-                margin-top: 1rem;
-                margin-left: 0rem;
-                margin-right: 0rem;
-                list-style-type: lower-alpha;
-            }
-            .long-list a:hover {
-                text-transform: uppercase;
-            }
-
-
-
-
-
-/* Navigation Menu */
-            nav {
-                padding-left: 0rem;
-                margin-top: .25rem;
-            
-            }
-            
-            nav a:link {
-                text-decoration:none;
-                display: inline-block;
-                width: 100%;
-                line-height: 3;
-                text-align: center;
-                font-size: 1.125rem;
-                margin-bottom: 1.5rem;
-                border: solid;
-                border-width: .0625rem;
-                border-color: #33658A;
-            }
-            
-            nav a:focus {
-                color:#FFF;
-                background-color: #33658A;
-            }
-            nav a:hover {
-                color:#FFF;
-                background-color: #33658A;
-            }
-            nav a:active {
-                color:#FFF;
-                background-color: #000;
-            }
-            
-
-/* Footer Styles */
-
-            footer {
-                text-align: center;
-            }
-
-
-
-
+            float:left;
+            display:flex;
+            width: 100%;               
+            background-color:black;
+            height: 1px;
+            vertical-align: baseline;
+       }
+       
+        pse{
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 12pt;
+        }
+        
 </style>
     
-    </head>
     <body>
-        <header>
-            <h1>Franzen Irony University</h1>
-        </header>
-        <nav>
-            <a href="#">Bespoke </a>
-            <a href="#">Flexitarian</a>
-            <a href="#">Yuccie</a>
-            <a href="#">Woke</a>
-            <a href="#">Paleo</a>
-            <a href="#">Sriracha</a>
+        <header>          
+            <p>Bacon <mark>Party</mark> Unicorns</p>     
+        </header>   
+        
+        <ul>
+            
+        <nav> 
+            <li><a href="#">About </a></li>
+            <li style="color: black; transform: rotate(10deg);"><a href="#"><strike>Blog</strike></a></li>
+            <li><a href="#">Merch</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>    
         </nav>
+        </ul>
         <main>
-            <section>
-                <h2>Loko Kogi Fixie</h2>
-                <p>Sustainable taiyaki put a bird on it, stumptown tilde pop-up seitan vape chambray jean shorts tumblr hammock shaman. Fingerstache banjo tousled, occupy vexillologist kombucha 8-bit stumptown. 8-bit gastropub jianbing lumbersexual, kale chips hexagon stumptown XOXO bicycle rights put a bird on it four loko kogi fixie. Chartreuse yuccie chambray brooklyn prism 
-                    <a href="https://en.wikipedia.org/wiki/Kombucha">Kombucha</a>,
-                    <a href="https://en.wikipedia.org/wiki/Chicharr%C3%B3n">Chicharrón</a>,
-                    <a href="https://en.wikipedia.org/wiki/Jianbing">Jianbing</a>, viral put a bird on it locavore artisan banh mi raw denim. Put a bird on it farm-to-table food truck hammock <a href="https://en.wikipedia.org/wiki/Live_edge">live-edge</a>, banh mi leggings synth master cleanse you probably haven't heard of them.</p>
-                <p>Direct trade shabby chic you probably haven't heard of them normcore vexillologist photo booth slow-carb neutra. Hell of chicharrones succulents mustache tumeric normcore. Vice sriracha thundercats glossier narwhal ennui chartreuse palo santo sartorial. </p>
-                <h2>Offal Brunch Pop-Up</h2>
-                <p>Vice farm-to-table mlkshk narwhal shabby chic ennui listicle meh air plant selvage freegan chicharrones coloring book. Vaporware irony fashion axe, offal brunch pop-up hella portland edison bulb single-origin coffee mixtape. Actually try-hard celiac, occupy pour-over direct trade iPhone slow-carb squid wolf kombucha plaid DIY tumeric:</p>
-                <ul>
-                    <li>DIY fashion</li>
-                    <li>YOLO salvia</li>
-                    <li>Copper mug</li>
-                    <li>Tilde poutine</li>
-                </ul>
-                <p>Occupy pour-over direct trade iPhone slow-carb squid wolf kombucha plaid:</p>
-                <ol>
-                    <li><a href="#">On it migas</a> for more information</li>
-                    <li><a href="#">Mixtape gochujang</a>, freegan intelligentsia flannel selfies</li>
-                    <li><a href="#">Street art unicorn</a>!</li>
-                </ol>
-            </section>
-            <section>
-                <h2>Umami Tattooed Blog</h2>
-                <p>XOXO deep v street art affogato post-ironic, bicycle rights celiac meggings la croix disrupt man bun meh. Banh mi direct trade marfa vice. Organic copper mug viral meggings. Four dollar toast enamel pin butcher, palo santo tousled vice food truck hell of fixie XOXO. Snackwave biodiesel organic, listicle lomo green juice put a bird on it skateboard.</p>
-                <figure>
-                    <img src="images/grad.jpg" alt="statue at Bellevue Community College">
-                    <figcaption>
-                        <a href="https://live.staticflickr.com/4353/35532378753_9a112d3ef6_c.jpg">!!!</a> by <a href="https://www.flickr.com/photos/shari-thompson/">Shari Thompson</a> licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode">BY-NC-SA 2.0</a>
-                    </figcaption>
-                </figure>
-                <ul class="long-list">
-                    <li><a href="#">Listicle Tilde </a></li>
-                    <li><a href="#">Locavore</a></li>
-                    <li><a href="#">Vinyl Echo</a></li>
-                    <li><a href="#">Prism Raclette</a></li>
-                    <li><a href="#">Stumptown</a></li>
-                    <li><a href="#">Next Level Raw</a></li>
-                    <li><a href="#">Cold-Pressed</a></li>
-                    <li><a href="#">Bicycle Rights</a></li>
-                    <li><a href="#">Dollar Toast</a></li>
-                    <li><a href="#">Chillwave</a></li>
-                    <li><a href="#">Prism Raclette</a></li>
-                    <li><a href="#">Taxidermy</a></li>
-                    <li><a href="#">Food Truck</a></li>
-                    <li><a href="#">Shaman</a></li>
-                    <li><a href="#">Bushwick</a></li>
-                    <li><a href="#">Craft Beer</a></li>
-                    <li><a href="#">Tousled</a></li>
-                    <li><a href="#">Chicharrones</a></li>
-                    <li><a href="#">8-Bit Cleanse</a></li>
-                    <li><a href="#">Affogato</a></li>
-                    <li><a href="#">YOLO Beard</a></li>
-                    <li><a href="#">Palo Santo</a></li>
-                    <li><a href="#">Four Loko V</a></li>
-                    <li><a href="#">Wolf Moon 90's</a></li>
-                </ul>
-            </section>
+               
+            <main-section1>      
+                <div class="flexContainer">
+                    <div class="flexLeft">
+                    <h3 style="font-size: 20pt">Bacon Cow Unicorn</h3> 
+                    
+                    <img src="images/stag.jpg" alt="stag" style="float:left">
+                   
+                    <p>
+                    Spicy jalapeno bacon ipsum dolor amet alcatra beef ribs ball tip cupim pancetta, corned beef jerky prosciutto beef flank meatball leberkas doner pork ground round. Swine porchetta tenderloin, tri-tip chislic andouille venison cow flank picanha leberkas cupim. Beef ribs shoulder kevin, fatback tri-tip shank frankfurter turkey rump meatloaf pancetta beef. Meatloaf short loin beef doner shank pancetta cupim pork loin ham hock chicken ground round drumstick. Turducken beef pork loin shank drumstick short ribs cow. Beef chicken bacon doner andouille short ribs.
+                    </p>
+                    
+                    <p>
+                    Boudin shoulder pig, shank short ribs short loin frankfurter drumstick sirloin tail cupim chuck pork loin tenderloin. Pig boudin buffalo chuck fatback tri-tip pork loin drumstick chislic jowl shank. Bresaola frankfurter hamburger jowl swine t-bone alcatra. Shank short ribs turducken salami. Rump pastrami salami short ribs flank ball tip pig turkey strip steak pork chop drumstick meatball tongue beef. Shankle salami t-bone boudin flank. Tenderloin bresaola pastrami burgdoggen chislic kevin boudin shoulder, jerky pig leberkas.
+                    </p>
+                    
+                    <p>
+                    Sirloin tongue strip steak beef. Landjaeger ribeye burgdoggen bresaola leberkas salami, tri-tip jowl. Buffalo swine frankfurter sausage ribeye jerky. Frankfurter ham tenderloin ground round short ribs pork biltong pork belly turducken turkey beef tri-tip prosciutto. Fatback doner meatloaf chicken. Pastrami corned beef kevin jowl tail, swine venison prosciutto. Pastrami filet mignon capicola short loin jowl pork tenderloin.
+                    </p>
+                    
+                    <p>
+                    Kevin alcatra venison, fatback kielbasa beef ribs corned beef salami shankle ground round turkey. Ribeye bacon jerky, bresaola short loin filet mignon boudin capicola ground round corned beef tail. Sirloin tenderloin biltong ham hock meatloaf, venison buffalo landjaeger. Chuck salami frankfurter tail, tenderloin ground round ham prosciutto beef pig beef ribs. Doner cupim burgdoggen beef filet mignon flank kevin turkey turducken ham hock, tail pancetta bacon beef ribs cow. Rump hamburger pastrami brisket.
+                    </p> 
+                    
+                    <p>
+                    Tail picanha swine ground round meatloaf drumstick fatback turducken t-bone buffalo venison pork chop tri-tip bacon. Pork belly burgdoggen alcatra ribeye. Frankfurter short loin tenderloin jerky turducken. Strip steak fatback picanha, rump andouille ground round corned beef sirloin. Hamburger pancetta sirloin leberkas ham hock chuck shoulder. Cow pastrami boudin venison bacon shoulder biltong turducken. Landjaeger beef shoulder, meatloaf tenderloin filet mignon sausage shankle pork loin turducken cupim chuck corned beef t-bone.
+                    </p>
+                    
+                    <p>
+                    Filet mignon chuck tri-tip andouille jowl swine chislic buffalo prosciutto shank ribeye kielbasa meatloaf porchetta t-bone. Leberkas jowl filet mignon sausage shankle landjaeger sirloin pork chop chicken. Venison kielbasa rump short loin kevin pig ham jowl tail turducken. Pork chop pancetta cupim, porchetta bresaola t-bone pastrami flank prosciutto. Bacon ribeye t-bone porchetta. Prosciutto short ribs pork chop salami pastrami.
+                    </p>
+                    
+                    <p>
+                    Landjaeger rump turkey flank. Shoulder meatball salami kielbasa pancetta pastrami pork belly rump frankfurter ground round capicola beef ribs shankle. Swine brisket ground round boudin, strip steak pork loin hamburger. Tri-tip frankfurter venison, drumstick kielbasa pork belly porchetta tail chicken meatball chislic swine jerky biltong pork chop. Bacon shank turkey brisket boudin short ribs pork chop leberkas hamburger. Tail ribeye leberkas, shoulder chislic turducken beef ribs.
+                    </p>
+                    
+                    <p>
+                    Burgdoggen frankfurter short loin, strip steak turducken shank ham fatback corned beef buffalo bresaola. Leberkas pork t-bone ground round hamburger ham hock tenderloin biltong picanha filet mignon. T-bone buffalo bacon boudin frankfurter, pork leberkas chislic flank short loin. Pork short loin chuck ribeye meatloaf, shankle flank hamburger kevin biltong spare ribs swine capicola doner. Tail shank turducken tri-tip brisket.
+                    </p>
+                        
+                        <p style="color:gray"><time datetime="1111-11-11"></time> 11 November, 1111.</p>
+
+                        <div class="columnbot">
+                            <div class="rowbot">
+                            <img src="images/eren-30s.jpg" alt="Eren">
+                                <figcaption style="text-align: left; 
+                                              background-color: lightyellow; max-width: 417px; "
+                                              >I like trains</figcaption>
+                                <p></p>
+                        </div>
+                        
+                        <div class="rowbot">
+                            <img src="images/industrial-city-2.jpg" alt="industrial" style="padding-right: 5px; padding-left: 5px">
+                            <figcaption style=" text-align: left; 5px; margin-left: 5px; margin-right: 5px;
+                                              background-color: lightyellow"
+                                              >I like beef</figcaption>
+                            <p></p>
+                        </div>
+                            
+                        <div class="rowbot">
+                            <img src="images/in-nomino.jpg" alt="in-nomino">
+                            <figcaption style="text-align: left;
+                                              background-color: lightyellow"
+                                              >I like unicorn bacon</figcaption>
+                            <p></p>
+                        </div>
+                            </div> 
+                </div>
+                     </div>
+                
+                    </main-section1>
+                    
+            <main-section2>
+                
+                <div class="flexContainer">
+                    
+                    <div class="flexRight">
+                    
+                        
+                        <h3>Unicorn Steak</h3>
+
+                            
+                        <img src="images/industrial.jpg" alt="industrial" style="max-height: 75%; max-width: 75%; float:left;">  
+                        
+                                               
+                        <ps>
+                            Tri-tip boudin pancetta chislic kevin doner tongue beef ribs swine fatback. Andouille fatback kevin jerky tri-tip strip steak shoulder. Ribeye meatloaf shoulder rump, bacon tri-tip corned beef turducken biltong jerky brisket t-bone. Leberkas drumstick short loin pastrami biltong ham hock. Cow andouille leberkas rump picanha.
+                            </ps>
+                      <p></p>
+                    <pse style="font-size: 8pt; a href=#">&#x26AB; &#x26AB; &#x26AB;</pse>
+                      
+                        
+                        <hr>
+
+                    <h3>Unicorn horn Steak</h3>
+                    
+                        <img src="images/routine.jpg" alt="routine" style="max-height: 75%; max-width: 75%; float:right;">
+                        
+                        
+                        <ps>
+                            Ham hock cupim drumstick turkey sausage. Pig boudin chuck biltong ham, ribeye fatback pork chicken rump prosciutto turkey sausage strip steak burgdoggen. Filet mignon shankle shoulder pork belly, tail tongue jerky sirloin landjaeger. Tenderloin meatball ground round strip steak rump capicola. Tongue kevin frankfurter prosciutto short ribs shank sirloin kielbasa fatback. Tail picanha ham hock, landjaeger short ribs rump flank kevin burgdoggen jowl cow.
+                            </ps>
+                      <p></p>
+                    <pse style="font-size: 8pt; a href=#">&#x26AB; &#x26AB; &#x26AB;</pse>
+                    
+                      <hr>
+                    <h3>Unicorn Pig Steak</h3>
+                    
+                        <img src="images/industrial-city.jpg" alt="industrial city" style="max-height: 75%; max-width: 75%; float:right;">               
+                        
+                        <ps>
+                            Spicy jalapeno bacon ipsum dolor amet alcatra chuck bresaola brisket pork loin venison, t-bone corned beef sirloin kielbasa pastrami picanha ball tip capicola. Turducken sirloin doner, pork loin boudin corned beef hamburger landjaeger. Swine kielbasa pancetta flank tenderloin. Meatball burgdoggen tail, cupim fatback jowl pork chop beef biltong. Buffalo tail kevin cow, biltong turducken boudin tenderloin chuck ham hock rump shank frankfurter. Tongue tail landjaeger, chuck cupim fatback pig pork venison doner beef kielbasa ham. Pork strip steak buffalo shoulder pastrami capicola.
+                    
+                        </ps>
+                      <p></p>
+                   <pse style="font-size: 8pt; a href=#">&#x26AB; &#x26AB; &#x26AB;</pse>
+                      <hr>
+                    </div>  
+                    <subsection >
+                        Subscribe
+                    </subsection>
+                    </div>  
+                </main-section2> 
+  
         </main>
+        
         <footer>
-            <p>&copy; 2019 Franzen Irony University</p>
+            
+            <p style="text-align: left;">
+            
+            <a href="mailto:example@example.com">&#169; 2020 Sustainable Critics Swag</a>
+            </p>
+            
+            <p>
+                <a href="Grigore Olednic"> Eren 30's, </a>
+                <a href="Creative Commons"> Industrial, </a>
+                <a href="Creative Commons"> Industrial City, </a>
+                <a href="Creative Commons"> Industrial City II, </a>
+                <a href="Creative Commons"> In-nomino, </a>
+                <a href="Creative Commons"> Routine, </a>
+                <a href="Creative Commons"> Stag</a>
+            </p>
+            <p>All images are created by Sasha Aim and liscenced by CC BY-NC-SA 2.0</p>
+            
         </footer>
     </body>
 </html>
