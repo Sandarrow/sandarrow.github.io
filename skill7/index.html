@@ -145,16 +145,23 @@
         }
         
         main-section{
+            display:flex;
+            flex-wrap: wrap;
+            float:left;                
             text-align: left;
-            float: right;
         }
         
         aside{
             float:right;
             border-left: 5px solid black;          
             margin-left: auto;
+            display:flex;
+            flex-wrap: wrap;
+            float:right;       
+            text-align: left;
             
         }
+        
         ps{
             text-align: left;
             font-size: 12pt;
@@ -162,14 +169,7 @@
             font-family: josefinslab, Arial, serif;                      
             
         }
-        
-        article{
-            display:flex;
-            flex-wrap: wrap;
-            float:left;
-            margin-right:25%;            
-            text-align: left;
-       }    
+
         
       .flex-container {
            display: flex;
@@ -217,7 +217,7 @@
         <main>
                
             <main-section>      
-            <article><div class="flex-container">
+                <div class="flex-container">
                     <div class="flex-item-left">
                     <h3>Bacon Cow Unicorn</h3> 
                     
@@ -260,8 +260,7 @@
                     <p><time datetime="1111-11-11"></time> 11 November, 1111.</p>
                 </div>
                 </div>
-                
-                        </article> 
+
                </main-section> 
             
 
