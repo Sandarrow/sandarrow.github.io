@@ -178,6 +178,31 @@
             margin-right:25%;            
             text-align: left;
        }    
+        .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
 
 </style>
     
@@ -198,10 +223,11 @@
         </ul>
         <main>
                
-                   <h3>Bacon Cow Unicorn</h3>
+                   
             <article>
+                    <div class="flex-item-left">
+                    <h3>Bacon Cow Unicorn</h3> 
                     
-                        
                     <figure>
                     <img src="images/stag.jpg" alt="stag" style="align-content:flexstart">
                     </figure>
@@ -239,7 +265,7 @@
                     </p>
                     
                     <p><time datetime="1111-11-11"></time> 11 November, 1111.</p>
-                   
+                </div>
                         </article> 
                
             
@@ -247,7 +273,7 @@
                 
             </section>
                 <aside>
-                    
+                    <div class="flex-item-right">
                   <div class="columnside"> 
                       <h3>Unicorn Steak</h3>
                     <div class="rowside"> 
@@ -289,7 +315,7 @@
                       <p></p>
                     <hr>
                     </div>  
-                       
+                    </div>
                      </aside>   
                                 
                 
